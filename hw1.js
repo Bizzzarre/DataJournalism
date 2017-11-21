@@ -41,7 +41,7 @@ const map_reduce = function(array, func) {
 }
 
 //filter через for
-const filter_for = fuction(array, pred) {
+const filter_for = function(array, pred) {
     result = [];
     let len = array.length;
     for (let i = 0; i != len; ++i) {
@@ -58,7 +58,8 @@ const filter_forEach = function(array, pred) {
     array.forEach((x) => {
         if (pred(x)) {
             result.push(x);
-        });
+        }
+    });
     return result;
     }
 
@@ -82,7 +83,7 @@ const every_for = function(array, pred) {
             return false;
         }
     }
-у    return true;
+    return true;
 }
 
 //every через forEach
@@ -121,7 +122,7 @@ const some_forEach = function(array, pred) {
     return false;
 }
 
-//some чрез reduce
+//some чeрез reduce
 const some_reduce = function(array, pred) {
     return array.reduce((acc, x) => acc || pred(x), false);
 }

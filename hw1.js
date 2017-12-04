@@ -130,6 +130,6 @@ const some_reduce = function(array, pred) {
 //mean
 const mean = function(array) {
     let result = 0;
-    array.forEach((x) => result + x);
+    result = array.reduce((acc, x) => acc + x, 0);
     return result / array.length;
 }

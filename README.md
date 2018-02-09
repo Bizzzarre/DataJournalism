@@ -22,6 +22,8 @@
 8. Что нужно знать, чтобы не попасться на удочку мошенников?
 9. Со сколькими людьми выгоднее (по соотношению цена/комфорт) жить?
 
+#Как выгрузить данные
+Как выгрузить данные с сайта Авито, показано в файле "avito.py". Если запустить программу, на экран выведется вектор векторов res, где указаны характеристики, подходящие под описание, и точные адреса.
 # Источники
 1. https://realty.yandex.ru/moskva_i_moskovskaya_oblast/snyat/kvartira/?rentTime=LARGE&from=yandex_direct&utm_source=yandex_direct&utm_medium=cpc&utm_content=5066967264_11663118350&utm_campaign=allRent_msk&yclid=7470950892051374504
 2. https://thelocals.ru/rooms?utm_source=yandex_direct&utm_medium=cpc&utm_campaign=msk_flat_rooms&yclid=7470951600022099880

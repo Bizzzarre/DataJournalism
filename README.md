@@ -18,9 +18,9 @@
 4. Какие квартиры есть в радиусе получаса (езды, ходьбы и др.) от корпуса ФКН?
 5. Какая средняя цена квартир в этой окрестности?
 6. Как цена зависит от станции метро? 
-7. Как цена зависит от близости к станции
+7. Как цена зависит от близости к станции?
 8. Во сколько раз двухкомнатные квартиры дороже однокомнатных в том же районе?
-
+9. Как зависит стоимость от площади?
 # Выгрузка данных
 Для сбора данных я выбрала 2 самых популярных (и открытых для получения информации через "средства разработчика" в браузере) Avito.ru и Domofond.ru
 1. Avito
@@ -29,6 +29,8 @@
 Непосредственно сам процесс сбора и небольшой корректировки данных можно видеть также в файле data_collecting.ipynb. Текстовая таблица с данными представлена в файле Domofond.txt
 # Создание html-страницы в github pages
 Ссылка на страницу: [Table of data](https://bizzzarre.github.io/DataJournalism/table_of_data.html)
+# Ответы на вопросы 
+Ответы на вопросы 6-9 содержатся в файле data_collecting.ipynb
 # Источники
 1. [https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=1"](https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=1")
 2. [https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=2"](https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=2")

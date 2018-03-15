@@ -28,7 +28,7 @@
 2. Domofond
 Непосредственно сам процесс сбора и небольшой корректировки данных можно видеть также в файле data_collecting.ipynb. Текстовая таблица с данными представлена в файле Domofond.txt
 # Создание html-страницы в github pages
-Ссылка на страницу: https://Bizzzarre.github.io/
+Ссылка на страницу: https://bizzzarre.github.io/DataJournalism/ 
 # Источники
 1. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=1"
 2. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=2"

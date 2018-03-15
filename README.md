@@ -1,4 +1,4 @@
-(# Поиск съёмного жилья в Москве
+# Поиск съёмного жилья в Москве
 Алексеева Ирина, 162 группа
 
 # Актуальность
@@ -30,12 +30,12 @@
 # Создание html-страницы в github pages
 Ссылка на страницу: [Table of data](https://bizzzarre.github.io/DataJournalism/table_of_data.html)
 # Источники
-1. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=1"
-2. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=2"
-3. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=3"
-4. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=4"
-5. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=5"
-6. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=6"
-7. https://www.avito.ru/moskva/kvartiry/sdam/na_dlitelnyy_srok?p=1&pmax=40000&pmin=0&metro=7-25-30-110&f=550_5702-5703-5704
-8. https://www.avito.ru/moskva/kvartiry/sdam/na_dlitelnyy_srok?p=2&pmax=40000&pmin=0&metro=7-25-30-110&f=550_5702-5703-5704
-9. https://www.avito.ru/moskva/kvartiry/sdam/na_dlitelnyy_srok?p=3&pmax=40000&pmin=0&metro=7-25-30-110&f=550_5702-5703-5704
+1. [https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=1"](https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=1")
+2. [https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=2"](https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=2")
+3. [https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=3"](https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=3")
+4. [https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=4"](https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=4")
+5. [https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=5"](https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=5")
+6. [https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=6"](https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=7")
+7. [https://www.avito.ru/moskva/kvartiry/sdam/na_dlitelnyy_srok?p=1&pmax=40000&pmin=0&metro=7-25-30-110&f=550_5702-5703-5704](https://www.avito.ru/moskva/kvartiry/sdam/na_dlitelnyy_srok?p=1&pmax=40000&pmin=0&metro=7-25-30-110&f=550_5702-5703-5704)
+8. [https://www.avito.ru/moskva/kvartiry/sdam/na_dlitelnyy_srok?p=2&pmax=40000&pmin=0&metro=7-25-30-110&f=550_5702-5703-5704](https://www.avito.ru/moskva/kvartiry/sdam/na_dlitelnyy_srok?p=2&pmax=40000&pmin=0&metro=7-25-30-110&f=550_5702-5703-5704)
+9. [https://www.avito.ru/moskva/kvartiry/sdam/na_dlitelnyy_srok?p=3&pmax=40000&pmin=0&metro=7-25-30-110&f=550_5702-5703-5704](https://www.avito.ru/moskva/kvartiry/sdam/na_dlitelnyy_srok?p=3&pmax=40000&pmin=0&metro=7-25-30-110&f=550_5702-5703-5704)

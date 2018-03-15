@@ -13,24 +13,29 @@
 
 # Вопросы
 1. Какие критерии существуют при выборе квартиры? (для меня это цена до 40к, близость к корпусу, Интернет, относительно свежий ремонт, сделанный хотя бы после развала СССР)
-2. Какая конкретно близость? (для фильтра я выбрала следующие станции метро: АЭРОПОРТ(самый приоритетный вариант), Динамо, Сокол, Дмитровская)
+2. Какая конкретно близость? (для фильтра я выбрала следующие станции метро: АЭРОПОРТ(самый приоритетный вариант), Динамо, Сокол, Войковская)
 3. Сколько каждый критерий добавляет к арендной плате?
 4. Какие квартиры есть в радиусе получаса (езды, ходьбы и др.) от корпуса ФКН?
 5. Какая средняя цена квартир в этой окрестности?
-6. Где находится ближайший район, так называемый "студенческий", где собственники привыкли сдавать квартиры студентам?
-7. Как стоит себя показать, чтобы Вам не отказали арендодатели?
-8. Что нужно знать, чтобы не попасться на удочку мошенников?
-9. Со сколькими людьми выгоднее (по соотношению цена/комфорт) жить?
+6. Как цена зависит от станции метро? 
+7. Как цена зависит от близости к станции
+8. Во сколько раз двухкомнатные квартиры дороже однокомнатных в том же районе?
 
-#Как выгрузить данные
-Как выгрузить данные с сайта Авито, показано в файле "avito.py". Если запустить программу, на экран выведется вектор векторов res, где указаны характеристики, подходящие под описание, и точные адреса.
+# Выгрузка данных
+Для сбора данных я выбрала 2 самых популярных (и открытых для получения информации через "средства разработчика" в браузере) Avito.ru и Domofond.ru
+1. Avito
+Непосредственно сам процесс сбора и небольшой корректировки данных можно видеть в файле data_collecting.ipynb. Текстовая таблица с данными представлена в файле Avito.txt
+2. Domofond
+Непосредственно сам процесс сбора и небольшой корректировки данных можно видеть также в файле data_collecting.ipynb. Текстовая таблица с данными представлена в файле Domofond.txt
+# Создание html-страницы в github pages
+Ссылка на страницу: https://Bizzzarre.github.io/
 # Источники
-1. https://realty.yandex.ru/moskva_i_moskovskaya_oblast/snyat/kvartira/?rentTime=LARGE&from=yandex_direct&utm_source=yandex_direct&utm_medium=cpc&utm_content=5066967264_11663118350&utm_campaign=allRent_msk&yclid=7470950892051374504
-2. https://thelocals.ru/rooms?utm_source=yandex_direct&utm_medium=cpc&utm_campaign=msk_flat_rooms&yclid=7470951600022099880
-3. https://move.ru/arenda_kvartir/?utm_source=traffic_mg&utm_medium=cpc&utm_campaign=search_msk_arenda_kvartir&utm_term=snjat_ot_hozjaina&individual=1&
-4. https://realty.yandex.ru/moskva/snyat/kvartira/?rentTime=LARGE&agents=NO&nosplash=1&utm_source=wizard&utm_term=%D1%81%D0%BD%D1%8F%D1%82%D1%8C+%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%83+%D0%B2+%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B5+%D0%B1%D0%B5%D0%B7+%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2+%D0%BE%D1%82+%D1%85%D0%BE%D0%B7%D1%8F%D0%B8%D0%BD%D0%B0+&utm_campaign=rent_all&from=wizard.offers&utm_medium=serp_wot03
-5. https://www.avito.ru/moskva/kvartiry/sdam
-6. https://www.cian.ru/snyat-kvartiru-bez-posrednikov/
-7. \\Для вопросов о "лайфхаках" можно создать гугл-опросник, вбросить его куда-нибудь, чтобы студенты отвечали о положительном/негативном опыте съёма жилья
-8. http://moskva.naydidom.com/tseny/adtype-arenda
-9. https://www.domofond.ru/tseny-na-nedvizhimost/moskovskaya_oblast/moskva-c3584
+1. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=1"
+2. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=2"
+3. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=3"
+4. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=4"
+5. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=5"
+6. https://www.domofond.ru/arenda-nedvizhimosti/search?MetroIds=21%2C44%2C124%2C39&PropertyTypeDescription=kvartiry&PriceTo=40000&RentalRate=Month&Rooms=One%2CTwo&Page=6"
+7. https://www.avito.ru/moskva/kvartiry/sdam/na_dlitelnyy_srok?p=1&pmax=40000&pmin=0&metro=7-25-30-110&f=550_5702-5703-5704
+8 https://www.avito.ru/moskva/kvartiry/sdam/na_dlitelnyy_srok?p=2&pmax=40000&pmin=0&metro=7-25-30-110&f=550_5702-5703-5704
+9. https://www.avito.ru/moskva/kvartiry/sdam/na_dlitelnyy_srok?p=3&pmax=40000&pmin=0&metro=7-25-30-110&f=550_5702-5703-5704

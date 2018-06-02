@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<head>
+<title> Поиск жилья</title>
+<meta charset='utf-8'>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #162eae;
+    color: black;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 80px;
+    color: black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+    border-bottom: 3px solid red;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.button {
+    position: relative;
+    left: 20%;
+    background-color: #555;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #444;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+      <img src="1.jpeg" alt="Norway" style="width:100%;">
+    <div class="centered"><h1> Поиск съёмного жилья в Москве </h1></div>
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="1.html">Поиск</a>
+  <a href="2.html"class="active">Анализ и выводы</a>
+  <a href="3.html">Ссылки</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script> 
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<p style="font-size:18px; left:10%; right=10%">
+Мой учебный проект «Поиск съёмного жилья в Москве» представляет из себя анализ и визуализацию
+данных, собранных с популярных сайтов по аренде недвижимости. В первую очередь он актуален для,
+которые по разным причинам захотели переехать поближе к месту учёбы и потенциальному месту работы.
+Для выявления оптимального жилья я сначала составила список параметров: количество комнат, ближайшая
+станция метро, расстояние до неё, площадь и, конечно, цена. </p>
+<p style="font-size:18px; left:10%; right=10%">
+В случае со студентами я посчитала очевидно правильным ограничиться студиями, однокомнатными и
+двухкомнатными квартирами. Студенты, предпочитающие жить в одиночестве, скорее, отдадут предпочтение
+студии или однокомнатной квартире. Пары или друзья чаще всего делают выбор в пользу двухкомнатных
+квартир, чтобы иметь больше свободного пространства, чем в общежитии. </p>
+<p style="font-size:18px; left:10%; right=10%">
+Также я остановила своё внимание на северной части зелёной ветки, ограничившись четырьмя станциями,
+поскольку на станции «Аэропорт» находится корпус факультета компьютерных наук НИУ «Высшей школы
+экономики», а севернее располагаются IT-отделы крупных компаний – потенциальные места прохождения
+практики или работы. К тому же, рассматриваемый район вполне благополучен: большое количество
+торговых центров, парков, находится в пределах МКАД. На карте дома, относящиеся к разным станциям
+метро, помечены разными знаками: Динамо - "star-15", Аэропорт - "airport-15", Сокол - "marker-15",
+Войковская - "triangle-15".</p>
+<p style="font-size:18px; left:10%; right=10%">
+Параметр «расстояние до метро» тоже оказался очень важным, поскольку жить рядом с метро на
+Войковской с точки зрения времени выгоднее, чем жить в 2 километрах на Соколе. К тому же в
+исследовании видна корреляция между расстоянием и ценой: с увеличением расстояния, уменьшается
+средняя цена.</p>
+<p style="font-size:18px; left:10%; right=10%">
+На фоне остальных параметров площадь квартиры кажется не очень важной, однако площадь квартиры
+косвенно характеризует тип дома. Эмпирическим путём было отмечено, что квартиры с меньшей площадью
+находятся в так называемых «хрущёвках», «сталинках» и прочих домах советской планировки. Мне важны
+такие параметры, как тип дома и шумоизоляция даже больше, чем расстояние до метро, может, я не
+одинока в этом. </p>
+<p style="font-size:18px; left:10%; right=10%">
+Разумеется, все желания должны уместиться во вполне скромный бюджет, поэтому последний, но не по
+важности параметр – цена. Для более информативной визуализации я разбила квартиры на следующие
+категории: 0-30000 руб./месяц, 30000-40000 руб./месяц, 40000-60000 руб./месяц, более 60000
+руб./месяц. Искатели жилья первой категории скорее ориентированы на сокращения расстояния между
+учёбой/работой и домом. Жильё второй категории, как правило, находится либо ближе к метро, либо
+ближе к центру, различия в условиях жилья – минимальны, однако именно в этом кластере находятся
+более или менее приличные однокомнатные квартиры. За 40000-60000 руб./месяц уже можно найти
+средненькую двухкомнатную квартиру в рассматриваемом районе. К последней группе я отнесла квартиры,
+которые не буду рассматривать для себя, но их отсутствие даёт не очень честную среднюю статистику.</p>
+<p style="font-size:18px; left:10%; right=10%">
+Самые выгодные для меня квартиры находятся в пределах 500 метров от станции метро Войковская, потому
+что:</p>
+<p style="font-size:18px; left:10%; right=10%">
+1.	Относительно других станций метро, она находится дальше от центра, поэтому цены ниже.</p>
+<p style="font-size:18px; left:10%; right=10%">
+2.	Поскольку в этом районе цены ниже, то за 40000 рублей можно подобрать неплохую двухкомнатную квартиру или хорошую однокомнатную квартиру сравнительно большой площади.  </p>
+<p style="font-size:18px; left:10%; right=10%">
+3. Близость к метро означает доступность передвижений по городу максимально быстро.  </p>
+
+</body>
+</html>
+
+
